@@ -1,0 +1,14 @@
+.section { background: var(--plum); padding: 6rem 4rem; }
+.tag { font-size: .63rem; font-weight: 400; letter-spacing: .2em; text-transform: uppercase; color: var(--berry-lt); margin-bottom: 1rem; display: flex; align-items: center; gap: .85rem; }
+.tag::before { content: ''; display: block; width: 22px; height: 1px; background: var(--berry-lt); }
+.title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 3.5vw, 3.5rem); font-weight: 400; line-height: 1.1; color: var(--white); margin-bottom: 3rem; }
+.title em { font-style: italic; color: var(--lavender); }
+.items { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: rgba(255,255,255,.08); }
+.item { background: var(--plum); padding: 2rem 1.75rem; display: grid; grid-template-columns: 28px 1fr; gap: 1rem; align-items: start; transition: background .2s; position: relative; overflow: hidden; }
+.item::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: var(--lavender); transform: scaleX(0); transform-origin: left; transition: transform .35s ease; }
+.item:hover::after { transform: scaleX(1); }
+.item:hover { background: rgba(255,255,255,.05); }
+.num { font-family: 'Cormorant Garamond', serif; font-size: .85rem; font-weight: 400; font-style: italic; color: var(--berry-lt); padding-top: .1rem; }
+.item h3 { font-size: .78rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; margin-bottom: .4rem; color: var(--lavender); }
+.item p  { font-size: .78rem; font-weight: 300; color: rgba(255,255,255,.5); line-height: 1.65; }
+@media (max-width: 960px) { .section { padding: 4rem 1.5rem; } .items { grid-template-columns: 1fr; } }

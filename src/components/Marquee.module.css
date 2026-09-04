@@ -1,0 +1,5 @@
+.wrap { background: var(--berry-pale); overflow: hidden; padding: .85rem 0; white-space: nowrap; }
+.track { display: inline-flex; animation: marquee 30s linear infinite; }
+.item { font-size: .62rem; font-weight: 400; letter-spacing: .2em; text-transform: uppercase; color: var(--berry); padding: 0 2.5rem; position: relative; }
+.item::after { content: '✦'; position: absolute; right: -.2rem; color: var(--berry-lt); letter-spacing: 0; font-size: .5rem; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
