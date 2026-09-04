@@ -29,12 +29,12 @@ export default function Hero() {
 
           <div className={styles.stats}>
             <div className={styles.stat}>
-              <span className={styles.statVal}>1,070+</span>
+              <span className={styles.statVal}>1,180+</span>
               <span className={styles.statLbl}>TikTok</span>
             </div>
             <div className={styles.statDivider} />
             <div className={styles.stat}>
-              <span className={styles.statVal}>100+</span>
+              <span className={styles.statVal}>1900+</span>
               <span className={styles.statLbl}>Instagram</span>
             </div>
             <div className={styles.statDivider} />
@@ -50,7 +50,7 @@ export default function Hero() {
           </div>
 
           <div className={styles.handles}>
-            <a className={styles.handle} href="https://www.tiktok.com/@ao.beth" target="_blank" rel="noreferrer">@ao.beth ↗</a>
+            <a className={styles.handle} href="https://www.tiktok.com/@lollythecreator" target="_blank" rel="noreferrer">@lollythecreator ↗</a>
             <a className={styles.handle} href="https://www.instagram.com/lollythecreator" target="_blank" rel="noreferrer">@lollythecreator ↗</a>
           </div>
 
